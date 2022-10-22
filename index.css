@@ -103,6 +103,7 @@
 	 padding: 0 15px 10px;
 	 position: relative;
 	 font-size: 14px;
+	 margin-top: 7px;
 }
  div.card div.card-actions {
 	 box-shadow: 0 2px 0px 0 rgba(0,0,0,0.075);
@@ -191,7 +192,12 @@
     background-color: white;
   }
   
-  /* Animation */
+  .mainwaves {
+
+	align-self: center;
+	margin-top: 75vh;
+
+  }
   
   .parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
@@ -220,7 +226,7 @@
       transform: translate3d(85px,0,0);
     }
   }
-  /*Shrinking for mobile*/
+ 
   @media (max-width: 768px) {
     .waves {
       height:40px;
