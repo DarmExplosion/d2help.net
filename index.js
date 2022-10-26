@@ -46,12 +46,38 @@ $(document).ready(function(){
     });
   });
 
-function scrollManager() {
+function initiatepage() {var currentelement = 0;}
 
+
+
+function scrollManager() {
+  var currentelement = 0;
     document.addEventListener('wheel', (e) => {
         
-       if(e.deltaY <= 1) { console.log('scrollup'); setTimeout(500)}
-       if(e.deltaY >= 1) { console.log('scrolldown');setTimeout(500)}
+       if(e.deltaY <= 1) { console.log('scrollup'); 
+
+                          setTimeout(500);
+                         
+                          switch(currentelement) {
+                            case 0: currentelement = 0; break;
+                            case 1: document.getElementById('header1').scrollIntoView(); currentelement = 0; break;
+                            case 2: document.getElementById('header2').scrollIntoView(); currentelement = 1; break;
+                          }
+      
+      
+      }
+       if(e.deltaY >= 1) { console.log('scrolldown');
+        setTimeout(500);
+       switch(currentelement) {
+        case 0: document.getElementById('header1').scrollIntoView(); currentelement = 1; break;
+        case 1: document.getElementById('header2').scrollIntoView(); currentelement = 2; break;
+        case 2: currentelement = 2; break;
+      }
+       
+       
+       }
     });
+
+
 
   }
