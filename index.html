@@ -6,27 +6,35 @@
 
 <body onload="scrollManager()">
 
-  <div style="text-align: center">
+  <div style="text-align: center" id="header1" onLoad="initiatepage()">
 
-    <h1 style="text-align: middle; font-family: Source ;">D2Helper</h1>
+    <h1 style="text-align: middle; font-family: Source; margin-top:1%;">D2Helper</h1>
+    <p>Welcome to d2Helper, a tool to bla bla ill rework the front end in a second</p>
+    <p>Welcome to d2Helper, a tool to bla bla ill rework the front end in a second</p>
+    <p>Welcome to d2Helper, a tool to bla bla ill rework the front end in a second</p>
+    <p>Welcome to d2Helper, a tool to bla bla ill rework the front end in a second</p>
+    <p>Welcome to d2Helper, a tool to bla bla ill rework the front end in a second</p>
+    <p>Welcome to d2Helper, a tool to bla bla ill rework the front end in a second</p>
+    <p>Welcome to d2Helper, a tool to bla bla ill rework the front end in a second</p>
     <p>Welcome to d2Helper, a tool to bla bla ill rework the front end in a second</p>
 
+    <div class="mainwaves" position="relative">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+      </svg>
+      </div>
   </div>
 
-    <div class="mainwaves">
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-        </g>
-        </svg>
-        </div>
+    
 
     <div class="cards">
 
@@ -140,9 +148,61 @@
             </div>
           </div>
         </div>
+      </div><div class="card">
+        <div class="card__image-holder" style="overflow: hiden;">
+          <img class="card__image" src="https://www.bungie.net/common/destiny2_content/icons/84c49263c3a70245843c9758d5890982.jpg" style="width: 100%; height:99%; position: absolute;"/>
+          <img class="card__image" src="https://www.bungie.net/common/destiny2_content/icons/4fe83598190610f122497d22579a1fd9.png" style=" position: relative;"/>
+          
+        </div>
+        <div class="card-title">
+          <a href="#" class="toggle-info btn">
+            <span class="left"></span>
+            <span class="right"></span>
+          </a>
+          <h2>
+            COME TO PASS
+              <small>Legendary / Energy / Auto Rifle </small>
+          </h2>
+        </div>
+        <div class="card-flap flap1">
+          <div class="card-description" style="margin-top: 7px;">
+            Source: Wellspring boss Golmag, Warden of the Spring
+          </div>
+          <div class="card-flap flap2">
+            <div class="card-actions">
+              <a href="#" class="btn">Craft</a>
+            </div>
+          </div>
+        </div>
+      </div><div class="card">
+        <div class="card__image-holder" style="overflow: hiden;">
+          <img class="card__image" src="https://www.bungie.net/common/destiny2_content/icons/84c49263c3a70245843c9758d5890982.jpg" style="width: 100%; height:99%; position: absolute;"/>
+          <img class="card__image" src="https://www.bungie.net/common/destiny2_content/icons/4fe83598190610f122497d22579a1fd9.png" style=" position: relative;"/>
+          
+        </div>
+        <div class="card-title">
+          <a href="#" class="toggle-info btn">
+            <span class="left"></span>
+            <span class="right"></span>
+          </a>
+          <h2>
+            COME TO PASS
+              <small>Legendary / Energy / Auto Rifle </small>
+          </h2>
+        </div>
+        <div class="card-flap flap1">
+          <div class="card-description" style="margin-top: 7px;">
+            Source: Wellspring boss Golmag, Warden of the Spring
+          </div>
+          <div class="card-flap flap2">
+            <div class="card-actions">
+              <a href="#" class="btn">Craft</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="card" id="header2">
         <div class="card__image-holder" style="overflow: hiden;">
           <img class="card__image" src="https://www.bungie.net/common/destiny2_content/icons/84c49263c3a70245843c9758d5890982.jpg" style="width: 100%; height:99%; position: absolute;"/>
           <img class="card__image" src="https://www.bungie.net/common/destiny2_content/icons/4fe83598190610f122497d22579a1fd9.png" style=" position: relative;"/>
